@@ -1,5 +1,13 @@
 body{
     background-color:rgb(247, 247, 247);
-
+    min-width: 100vw;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
+}
+main{
+    width: 100%;
+}
+html {
+    display: block;
+    padding: 0;
 }
