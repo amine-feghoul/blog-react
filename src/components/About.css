@@ -1,0 +1,62 @@
+.about-container{
+    height: fit-content;
+       width: 100vw;
+       padding-top: 3rem;
+       margin-bottom: 50px;
+}
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.about-header{
+    font-size: 36px;
+    color: #013d3f;
+    text-decoration: underline;
+}
+.fields{
+    height: fit-content; 
+    width: 90vw;
+    align-self: center;
+    justify-items: center;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-self: start ;
+    justify-content: start  ;
+}
+.fields field{
+    flex-basis: 20vw;
+}
+.personal-info {
+    margin-top:  20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start ;
+}
+.skills{
+    margin: 0;
+    padding: 0;
+    width:auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+@media screen and (max-width: 700px){
+
+
+    .personal-info {
+        margin-top: 50px;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+}

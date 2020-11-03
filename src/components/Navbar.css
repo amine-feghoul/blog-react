@@ -1,0 +1,140 @@
+.navbar-conatiner{
+    margin: 0;
+    padding: 0;
+    height:3rem;
+    position: fixed;
+    top:0;
+    background: #1b242f;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0,0.3 ); 
+}
+
+.navbar-wrapper{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    color: white;
+}
+
+.nav-logo{
+  
+    display: flex; 
+    align-items: center;
+    height: 100%;
+    flex-basis: 30vw;
+    justify-content: center;
+    font-family: 'Grandstander', cursive;
+    
+}
+.nav-logo a{
+    color: white  ;
+    
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+.nav-logo a:hover{
+    color:#e31b6d ;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    flex-basis: 40vw;
+}
+
+.links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.links li{
+    height: 100%;
+    width: 8vw;
+    display: flex ;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white         ;
+    height: 100%;
+    width: 100%;
+}
+.links a:hover{
+    width: 100%;
+    background-color:#283647 ;
+    color:#e31b6d;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #19d3da;
+    transition: color 0.3s ease-out;
+    
+}
+.links a:active{
+    margin-bottom: -2px;
+    border-bottom: 2px solid beige;
+ }
+
+.links i{
+    display: none;
+}
+.menu-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-basis: 5vw;
+    display: none;
+    margin-right: 1rem;
+}
+.fa-times{
+    color:#e31b6d;
+}
+@media screen and (max-width:700px){
+    .nav-links{
+        justify-self: center;
+        margin-left: auto;
+        width: 50vw;
+        height: 3rem;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background:#1b242f;
+        z-index: -20;
+        box-shadow: 0px 2px 5px 1px rgba(0, 0, 0,0.3 );
+        right: -100%;
+        transition: all 0.4s ease-in-out;
+    }
+    .nav-links.active{
+        right: 1rem;
+    }
+    .links{
+        justify-self: center;
+
+    }
+    .links span{
+    display: none;
+    }
+    .links i{
+        display: block;
+    }
+    .menu-icon{
+        display: flex  ;
+       
+        }
+}
